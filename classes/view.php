@@ -2,6 +2,8 @@
 abstract class Classes_View
 {
     /**
+     * function to get the view for a function + render it
+     *
      * @param string $classname
      * @param string $functionname
      */
@@ -19,11 +21,17 @@ abstract class Classes_View
         echo $parsed;
     }
 
+    /**
+     * @return string
+     */
     protected function _getHeader()
     {
         return file_get_contents(getcwd() . '/../layout/header.phtml');
     }
 
+    /**
+     * @return string
+     */
     protected function _getFooter()
     {
         return file_get_contents(getcwd() . '/../layout/footer.phtml');

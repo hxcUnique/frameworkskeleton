@@ -1,5 +1,11 @@
 section {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 50%;
     background-color: red;
+    margin: auto;
+}
+
+nav {
+    list-style: none;
+
 }
